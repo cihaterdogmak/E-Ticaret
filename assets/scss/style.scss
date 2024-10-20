@@ -1,0 +1,91 @@
+:root {
+    --bg-one: #1f4b43;
+    --bg-one-hover: #286157;
+    --bg-two: #e7c873;
+    --bg-two-hover: #e7c873;
+    --bg-blue: #254ef0;
+    --bg-blue-hover: #365cf5;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+.product-banner-image {
+    position: relative;
+
+    &-content {
+        position: absolute;
+        margin-top: 60px;
+        margin-left: 20px;
+        .filter-link {
+            font-size: 1.5rem;
+            display: block;
+            text-decoration: none;
+            text-align: left;
+            color: #ffffff;
+            transition: padding-left 150ms, color 400ms;
+
+            &:hover {
+                color: #F2E3D0;
+                padding-left: 15px;
+                font-weight: 900;
+            }
+        }
+    }
+    &-nameprice {
+        text-align: left;
+        position: absolute;
+        transform: translate(1050px, 300px);
+        .color-orange {
+            color: #E25E00;
+        }
+    }
+}
+
+
+
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+
+    &-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.swiper-slide {
+    height: 500px;
+    width: 100%;
+    border-radius: 16px;
+
+    img {
+        border-radius: 16px;
+        object-position: top;
+    }
+}
+
+body {
+    background-color: rgb(242, 227, 208);
+}
