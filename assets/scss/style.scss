@@ -24,6 +24,14 @@ img {
         position: absolute;
         margin-top: 60px;
         margin-left: 20px;
+        text-align: left;
+
+        button {
+            
+            background-color: #514EB1;
+            padding: 10px 60px;
+        }
+
         .filter-link {
             font-size: 1.5rem;
             display: block;
@@ -44,7 +52,7 @@ img {
         position: absolute;
         transform: translate(1040px, 270px);
         .color-orange {
-            color: #E25E00;
+            color: #ff6a00;
         }
     }
 }
