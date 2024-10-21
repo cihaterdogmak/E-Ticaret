@@ -41,12 +41,44 @@
                             <img src="assets/img/product/rotring800banner-1.jpg" alt="">
                         </div>
                     </div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">
+                        <div class="product-banner-image">
+                            <div class="product-banner-image-nameprice">
+                                <span class="fw-semibold fs-2 text-decoration-line-through d-block">2000TL</span>
+                                <span class="fw-semibold display-5 color-orange">1500TL</span>
+                            </div>
+                            <div class="product-banner-image-content">
+                                <a href="#" class="filter-link fw-semibold fs-3 text-black">İsme Özel Kalem</a>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text" id="basic-addon1">Adınız</span>
+                                    </div>
+                                    <input onclick="goster()" type="text" class="form-control text-white"
+                                        placeholder="Lütfen Adınızı Giriniz" aria-label="Username"
+                                        aria-describedby="basic-addon1">
+                                </div>
+                                <div id="gizliYazi" class="hidden">
+                                    <a href="#" class="filter-link hidden">Yazamazsın çünkü kalemin yok</a>
+                                    <a href="#" class="filter-link hidden fs-3 text-black">Adını Yazmak İstiyorsan</a>
+                                    <a href="#" class="filter-link hidden fs-3 text-black">Kalem Almalısın</a>
+                                    <a href="#" class="filter-link hidden fs-5 text-black fw-lighter">Stoklar az! Arz talep dostum</a>
+                                </div>
+
+                                <button type="button" class="btn btn-primary mt-4">Ürüne Git </button>
+                            </div>
+                            <img src="assets/img/product/sell-this-pencil.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
+
             <script>
+                function goster() {
+                    var gizliYazi = document.getElementById("gizliYazi");
+                    gizliYazi.style.display = "block"; // Gizli yazıyı görünür yapar
+                }
+
                 var swiper = new Swiper(".--bannerSlide", {
                     pagination: {
                         el: ".swiper-pagination",

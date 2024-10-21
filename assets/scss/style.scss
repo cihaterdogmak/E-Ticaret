@@ -1,6 +1,6 @@
 :root {
-    --bg-one: #1f4b43;
-    --bg-one-hover: #286157;
+    --bg-one: #ff7300;
+    --bg-one-hover: #9e3f00;
     --bg-two: #e7c873;
     --bg-two-hover: #e7c873;
     --bg-blue: #254ef0;
@@ -15,6 +15,9 @@ img {
     max-width: 100%;
 }
 
+.color-orange {
+    color: var(--bg-one) !important ;
+}
 
 
 .product-banner-image {
@@ -31,7 +34,6 @@ img {
             background-color: #514EB1;
             padding: 10px 60px;
         }
-
         .filter-link {
             font-size: 1.5rem;
             display: block;
@@ -52,7 +54,7 @@ img {
         position: absolute;
         transform: translate(1040px, 270px);
         .color-orange {
-            color: #ff6a00;
+            color: var(--bg-one);
         }
     }
 }
@@ -96,4 +98,7 @@ img {
 
 body {
     background-color: rgb(242, 227, 208);
+}
+.hidden {
+    display: none;
 }
